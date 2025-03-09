@@ -41,17 +41,26 @@ para comprender los datos antes de realizar otros análisis
 with st.expander("Preguntas de Ejemplo", expanded=False):
     st.write(
         """
-        - What tools do you have access to? Return a table.
-        - Give me information on the correlation funnel tool.
-        - Explain the dataset.
-        - What do the first 5 rows contain?
-        - Describe the dataset.
-        - Analyze missing data in the dataset.
-        - Generate a correlation funnel. Use the Churn feature as the target.
-        - Generate a Sweetviz report for the dataset. Use the Churn feature as the target.
+        - ¿Qué herramientas tienes disponibles? Devuelve una tabla.
+        - Dame información sobre la correlation funnel tool.
+        - Explica el conjunto de datos.
+        - ¿Qué contienen las primeras 5 filas?
+        - Describe el conjunto de datos.
+        - Analiza los datos faltantes en el conjunto de datos.
+        - Genera un correlation funnel. Usa la característica Churn como objetivo.
+        - Genera un informe de Sweetviz para el conjunto de datos. Usa la característica Churn como objetivo.
         """
     )
-
+#"""
+#        - What tools do you have access to? Return a table.
+#        - Give me information on the correlation funnel tool.
+#        - Explain the dataset.
+#        - What do the first 5 rows contain?
+#        - Describe the dataset.
+#        - Analyze missing data in the dataset.
+#        - Generate a correlation funnel. Use the Churn feature as the target.
+#        - Generate a Sweetviz report for the dataset. Use the Churn feature as the target.
+#        """
 # Sidebar for file upload / demo data
 st.sidebar.image("images/Logo_AB.png", use_container_width=True)  # Ruta a la imagen
 st.sidebar.markdown("Contact: jesica.tapia@analiticaboutique.com.mx vicente@analiticaboutique.com.mx")
@@ -316,9 +325,9 @@ if st.session_state["DATA_RAW"] is not None:
     # Use the built-in chat input widget
     question = st.chat_input("Enter your question here:", key="query_input")
     if question:
-        if not st.session_state["OPENAI_API_KEY"]:
-            st.error("Please enter your OpenAI API Key to proceed.")
-            st.stop()
+        #if not st.session_state["OPENAI_API_KEY"]:
+        #    st.error("Please enter your OpenAI API Key to proceed.")
+        #    st.stop()
     
         with st.spinner("Thinking..."):
             # Add the user's question to the message history
