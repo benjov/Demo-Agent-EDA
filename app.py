@@ -62,8 +62,8 @@ with st.expander("Preguntas de Ejemplo", expanded=False):
 #        - Generate a Sweetviz report for the dataset. Use the Churn feature as the target.
 #        """
 # Sidebar for file upload / demo data
-st.sidebar.image("images/Logo_AB.png", use_container_width=True)  # Ruta a la imagen
-st.sidebar.markdown("Contact: jesica.tapia@analiticaboutique.com.mx vicente@analiticaboutique.com.mx")
+st.sidebar.image("images/Logo_GE.png", use_container_width=True)  # Ruta a la imagen
+#st.sidebar.markdown("Contact: jesica.tapia@analiticaboutique.com.mx vicente@analiticaboutique.com.mx")
 st.sidebar.header("Copiloto EDA: Data Upload/Selection", divider=True)
 st.sidebar.header("Upload Data (CSV or Excel)")
 use_demo_data = st.sidebar.checkbox("Usa datos demo", value=False)
